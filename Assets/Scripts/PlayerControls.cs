@@ -19,6 +19,19 @@ Rigidbody2D rb;
     void Start()
     {
 
+rb = transform.GetComponent<Rigidbody2D>();
+
+posX = transform.position.x;
+
+
+
+
+
+
+
+
+
+
     }
 
     // Update is called once per frame
