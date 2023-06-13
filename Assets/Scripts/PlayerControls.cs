@@ -79,4 +79,15 @@ isGrounded = true;
 
     }
 
+
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+
+
+
+
+        
+    }
+
 }
