@@ -51,7 +51,7 @@ InvokeRepeating("InstantiateObjects", spawnDelay, spawnTime);
     {
 
 
-transform.position = new Vector3(15, -2.75f, 0);
+transform.position = new Vector3(15, 0f, 0);
 
 
 
