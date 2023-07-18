@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerControls : MonoBehaviour
 {
 
-[Header("default qajumpisgn sapoewr")]
+[Header("default qajumpisgn sapoewr💀💀💀💀💀")]
 public float jumpPower = 6f;
 
-[Header("bovoldea n isd goru8nde")]
+[Header("bovoldea n isd goru8nde💀💀💀💀")]
 public bool isGrounded = false;
 
 float posX = 0.0f;
@@ -33,20 +33,21 @@ posX = transform.position.x;
 void FixedUpdate()
 {
 
-
-    if(transform.position.x <posX){
-
-        GameOver();
-    }
-
-
-
 if (Input.GetKey(KeyCode.Space) && isGrounded)
 {
 rb.AddForce(Vector3.up * (jumpPower * rb.mass * rb.gravityScale * 20.0f));
 
 
 }
+
+    if(transform.position.x < posX){
+
+        GameOver();
+    }
+
+
+
+
 
 
 
@@ -114,7 +115,13 @@ Destroy(collision.gameObject);
 }
 
 
-    
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Ground")
+        {
+            isGrounded = true;
+        }
+    }
 
 
 
